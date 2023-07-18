@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ 
+#section {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+ 
+ 
+#section .color {
+    position: absolute;
+    filter: blur(200px);
+}
+ 
+ 
+#section .color:nth-child(1) {
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: #2fd8e8;
+}
+ 
+#section .color:nth-child(2) {
+    bottom: -150px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background: #f793c7eb;
+}
+ 
+#section .color:nth-child(3) {
+    bottom: 50px;
+    right: 100px;
+    width: 500px;
+    height: 500px;
+    background: #a5d6e1;
+}
+ 
+#section .box {
+    position: relative;
+	border-radius: 20px;
+}
+ 
+/* 背景圆样式 */
+ 
+#section .box .circle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    filter: hue-rotate(calc(var(--x) * 70deg));
+    animation: animate 10s linear infinite;
+    animation-delay: calc(var(--x) * -2s);
+}
+ 
+/* 背景圆动画 */
+ 
+@keyframes animate {
+    0%, 100% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform:translateY(50px);
+    }
+}
+ 
+#section .box .circle:nth-child(1) {
+    top: -30px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+}
+ 
+#section .box .circle:nth-child(2) {
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+ 
+#section .box .circle:nth-child(3) {
+    bottom: 130px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+ 
+#section .box .circle:nth-child(4) {
+    bottom: -90px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+}
+ 
+#section .box .circle:nth-child(5) {
+    top: -50px;
+    left: 140px;
+    width: 70px;
+    height: 70px;
+}
+ 
+#section .box .circle:nth-child(6) {
+    top: 60px;
+    left: 100px;
+    width: 60px;
+    height: 60px;
+}
+
+#section .box .circle:nth-child(7) {
+    top: 350px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+/* 框样式 */
+ 
+#section .container {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+ 
+#section .form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+/* 标题样式 */
+ 
+#section .form h2 {
+    position: relative;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+ 
+/* 标题的下划线样式 */
+ 
+#section .form h2:before {
+    content: "";
+    position: absolute;
+    left: 50;
+    bottom: -10px;
+    width: 0px;
+    height: 3px;
+    background: #fff;
+    transition: 0.5s;
+}
+ 
+#section .form h2:hover:before {
+    width: 110px;
+}
+
+#section .form .inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* 输入框样式 */
+ 
+#section .form .inputBox input {
+    width: 100%;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #666;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+ 
+#section .form .inputBox input::placeholder {
+    color: #666;
+}
+ 
+/* 按钮样式 */
+ 
+#section .form .inputBox input[type="submit"] {
+    background: #fff;
+    color: #666;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 10px;
+    left: 25%;
+    top: 50%;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 15px;
+    border: none;
+}

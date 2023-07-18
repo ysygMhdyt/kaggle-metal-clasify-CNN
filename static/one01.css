@@ -1,0 +1,99 @@
+* {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+body {
+	background-image: linear-gradient(45deg, #64dcf1dc, #ffc5e3eb);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+	width: 1300px;
+	margin: 0 auto;
+	border-left:1px solid #ADD8E6;
+	position: relative;
+	background: linear-gradient(#fffcfc, #fafafa);
+	empty-cells: show;
+}
+
+td,th {
+    padding: 0;
+	text-align: center;
+	width:200px;
+	height: 52.53px;
+	overflow: auto;
+}
+
+#one dd {
+	background: #fffcfc;
+    width: 1300px;
+	height: 50px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#one dd h2{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+#one #mtable caption {
+	color: rgb(71, 70, 70);
+	font: italic 85%/1 arial,sans-serif;
+	padding: 1em 0;
+	text-align: center;
+}
+ 
+#one #mtable td,#one #mtable th {
+	border-left: 1px solid #cbcbcb;
+	border-width: 0 0 0 1px;
+	font-size: inherit;
+	margin: 0;
+	overflow: visible;
+	padding: .5em 1em;
+	
+}
+ 
+#one #mtable thead {
+	background-color: #e0e0e0;
+	color: rgb(71, 70, 70);
+	text-align: left;
+	vertical-align: bottom;
+}
+ 
+#one #mtable tr th {
+	background-color: transparent;
+}
+
+#one #mtable tr td {
+	background-color: transparent;
+}
+ 
+#one #mtable-bordered td {
+	border-bottom: 1px solid #cbcbcb;
+}
+ 
+#one #mtable-bordered tbody>tr:last-child>td {
+	border-bottom-width: 0;
+}
+
+#footer dd {
+	bottom: 0;
+	width: 1300px;
+	height: 150px;
+	position: relative;
+	background: #fffcfc;
+	margin:0 auto;;
+}
+
+#footer dd a {
+	font-size: 21px;
+	margin-left: 50px;
+	display:inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
